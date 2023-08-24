@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Flutter"),
+          centerTitle: true,
+          leading: Center(child: Text("Ok")),
+          actions: [
+            Center(child: Text("logout")),
+            Text("Done")
+          ],
+        ),
+        body: Text("Helo"),
+      ),
+    ),
+  );
+}

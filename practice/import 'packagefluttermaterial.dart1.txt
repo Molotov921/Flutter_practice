@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+
+void main() {
+
+  String name="Neel";
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Neel"),
+          centerTitle: true,
+          leading: Center(child: Center(child: Center(child: Text("Back")))),
+          actions: [
+            Center(child: Text("logout")),
+            Center(child: Text(" More")),
+          ],
+        ),
+        body: Center(
+          child: Text(
+            "Welcome to $name",
+            style: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+                // backgroundColor: Colors.purple
+                color: Colors.blue,
+                // decoration: TextDecoration.overline
+                decoration: TextDecoration.underline,
+                // decoration: TextDecoration.lineThrough,
+                decorationColor: Colors.red,
+                decorationStyle: TextDecorationStyle.dotted
+                // color: Color(0x5162BD13),
+                // color: Color.fromRGBO(182, 204, 139, 1)
+                ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
